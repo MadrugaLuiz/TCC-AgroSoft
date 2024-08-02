@@ -5,10 +5,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Data
@@ -24,10 +21,13 @@ public class Pessoa {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @NonNull
     private String email;
 
+    @NonNull
     private Integer telefone;
 
+    @NonNull
     private Integer password;
 
     private String ImgPessoa;
