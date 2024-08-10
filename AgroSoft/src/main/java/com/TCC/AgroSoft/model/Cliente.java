@@ -5,11 +5,7 @@ import jakarta.persistence.Entity;
 import lombok.*;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class Cliente {
+public class Cliente  extends  Pessoa{
 
     @NonNull
     private Boolean IsCliente;

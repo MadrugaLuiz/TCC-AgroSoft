@@ -2,14 +2,10 @@ package com.TCC.AgroSoft.model;
 
 
 import jakarta.persistence.Entity;
-import lombok.*;
+import lombok.NonNull;
 
 @Entity
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Builder
-public class Vendedor {
+public class Vendedor extends Pessoa {
 
     @NonNull
     private String tipo;

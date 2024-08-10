@@ -22,7 +22,7 @@ public class ImgServico {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private Integer IdServico; //Verificar alteração do diagrama de classes
+    private Integer IdServico;
 
     private String url;
 }
